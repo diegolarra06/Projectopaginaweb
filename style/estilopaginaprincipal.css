@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-image: url('../img/fondooscuro.webp'); /* Imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    margin-top: 20px;
+    background: #1565c0;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 55px;
+    z-index: 999;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: gray;
+    border-radius: 4px;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 100px; /* Para no tapar el contenido con el header */
+}
+
+/* Publicidad fija en los laterales */
+.publicidad {
+    width: 10%;
+    color: black;
+    background: white;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    overflow-y: auto; /* Permite hacer scroll si el contenido es grande */
+}
+
+/* Ubicar publicidad a la izquierda */
+.publicidad.izquierda {
+    left: 0;
+    overflow: scroll;
+}
+
+/* Ubicar publicidad a la derecha */
+.publicidad.derecha {
+    right: 0;
+    overflow: scroll;
+}
+
+/* Ajustar contenido principal para que quede en el centro */
+.contenido {
+    width: 60%;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-bottom: 20px;
+}
+
+.imagen {
+    width: 100%;
+    height: 500px;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagendeportista {
+    width: 100%;
+}
+.imagenproteina , .imagenofertaproteina , .imagenbasicfit , .imagenPlanet {
+    width: 100%;
+   height: 40vh;
+}
+
+h3 {
+    color: blue;
+    bottom: auto;
+    font-size: 40px;
+}

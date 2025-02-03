@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../style/estilopaginaalta.css">
+</head>
+<body>
+    <section class="form-register">
+        <h4>Formulario de Registro</h4>
+        <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+        <input class="controles" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+        <input class="controles" type="text" name="dni" id="dni" placeholder="Ingrese su DNI (8 dígitos y 1 letra)" pattern="[0-9]{8}[A-Z]" required>
+        <input class="controles" type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirección (C/Nombre NºNum PLetra)" required>
+        <input class="controles" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad" required>
+        <select class="controles" name="codigo_postal" id="codigo_postal" required>
+            <option value="">Seleccione su Código Postal</option>
+            <option value="28001">28001</option>
+            <option value="28002">28002</option>
+            <option value="28003">28003</option>
+            <option value="28004">28004</option>
+            <option value="28005">28005</option>
+        </select>
+        <input class="controles" type="text" name="pais" id="pais" placeholder="Ingrese su País" required>
+        <input class="controles" type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="Fecha de Nacimiento (Opcional)">
+        <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <input class="controles" type="password" name="contrasena" id="contrasena" placeholder="Contraseña (Max7Letras_5letrasÓnumeros&2num)" pattern="[A-Za-z]{7}_[A-Za-z0-9]{5}&[0-9]{2}" required>
+        <select class="controles" name="sexo" id="sexo" required>
+            <option value="">Seleccione su Género</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <fieldset>
+            <legend>Aficiones</legend>
+            <label><input type="checkbox" name="aficiones" value="deporte"> Deporte</label>
+            <label><input type="checkbox" name="aficiones" value="lectura"> Lectura</label>
+            <label><input type="checkbox" name="aficiones" value="musica"> Música</label>
+            <label><input type="checkbox" name="aficiones" value="viajes"> Viajes</label>
+            <input class="controles" type="text" name="otra_aficion" placeholder="Otra afición">
+        </fieldset>
+        <input class="controles" type="file" name="foto_perfil" id="foto_perfil" accept="image/*">
+        <label class="checkbox-label"><input type="checkbox" name="terminos" required> Acepto los <a href="#">Términos y Condiciones</a></label>
+       
+        <div class="botones">
+            <a href="index.html"><input class="boton" type="reset" value="Registrarse"></a>
+            <input class="boton" type="reset" value="Borrar">
+            <a href="index.html"><input class="boton" type="reset" value="Cancelar"></a>
+        </div>
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
+</body>
+</html>
